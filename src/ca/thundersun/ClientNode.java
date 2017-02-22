@@ -43,10 +43,8 @@ public class ClientNode {
         cEngine = new ClientSymmetricEngine(propertiesFile, true);
         getcEngine().setup();
         getcEngine().setupDatabase(true);
-        getcEngine().openRegistration("client", "002");// client is the name of the node group and 001 is the ID
-        getcEngine().setup();
         getcEngine().start();
-
+        getcEngine().openRegistration("client", "002");// client is the name of the node group and 001 is the ID
     }
 
     public ClientSymmetricEngine getcEngine() {
